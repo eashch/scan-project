@@ -4,7 +4,7 @@ function Unauthorized() {
     return (
         <main className='unauthorized-page'>
             <h1 className='text_title'>
-                Войдите или зарегистрируетесь
+                Войдите или зарегистрируйтесь
             </h1>
         </main>
     ); 
