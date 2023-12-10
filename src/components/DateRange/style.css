@@ -1,0 +1,131 @@
+.date-range {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-range__label {
+    font-size: 18px;
+    letter-spacing: 0.54px;
+    margin-bottom: 20px;
+}
+
+.date-range__asterisk {
+    display: inline;
+    margin-left: 2px;
+    font-size: 25px;
+}
+
+
+
+.date-inputs {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media (max-width:1440px) {
+    .date-inputs {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.date-inputs__input {
+    width: 176px;
+    height: 43px;
+}
+
+@media (max-width:1440px) {
+    .date-inputs__input {
+        width: 335px;
+    }
+}
+
+.date-inputs__input_error::placeholder {
+    color: var(--color-red-error);
+    opacity: 1;
+}
+
+.date-input-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.date-input-placeholder {
+    position: absolute;
+    width: 176px;
+    height: 43px;
+    background-color: var(--color-white);
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 43px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #C7C7C7;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width:1440px) {
+    .date-input-placeholder {
+        width: 335px;
+        padding-left: 122px;
+    }
+}
+
+.date-input-placeholder__text {
+    color: var(--color-dark-gray);
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    margin-top: 13px;
+    width: 90px;
+}
+
+.arrow-wrapper {
+    margin-top: 2px;
+    margin-left: 11px;
+    background-color: var(--color-white);
+    width: 28.5px;
+    height: 39px;
+}
+
+@media (max-width:1440px) {
+    .arrow-wrapper {
+        margin-top: 2px;
+        margin-left: 90px;
+    }
+}
+
+.arrow-wrapper__arrow {
+    margin-top: 12px;
+    width: 20px;
+    height: 20px;
+}
+
+.date-inputs__input_error {
+    border-radius: 5px;
+    border: 1px solid var(--color-red-error);
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(255, 89, 89, 0.20);
+    color: var(--color-red-error);
+}
+
+.date-range__asterisk_error {
+    color: var(--color-red-error);
+}
+
+.date-range__error {
+    align-self: center;
+    margin-top: 7px;
+    color: var(--color-red-error);
+    visibility: hidden;
+}
+
+@media (max-width:1440px) {
+    .date-range__error {
+        align-self: center;
+        margin-left: -14px;
+        margin-top: 5px;
+    }
+}

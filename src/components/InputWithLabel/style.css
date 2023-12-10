@@ -1,0 +1,94 @@
+.input-with-label {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-with-label__label {
+    color: var(--color-dark-gray);
+    font-size: 16px;
+    letter-spacing: 0.32px;
+}
+
+.input-with-label__label_search {
+    font-size: 18px;
+    letter-spacing: 0.54px;
+    color: var(--color-black);
+}
+
+@media (max-width:1440px) {
+    .input-with-label__label {
+        font-size: 14px;
+        letter-spacing: 0.28px;
+    }
+}
+
+@media (max-width:1440px) {
+    .input-with-label__label_search {
+        font-size: 18px;
+        letter-spacing: 0.54px;
+    }
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: min-content;
+}
+
+.input-with-label__asterisk {
+    display: inline;
+    margin-left: 2px;
+    font-size: 25px;
+}
+
+.input-with-label__asterisk_error {
+    color: var(--color-red-error);
+}
+
+.input-with-label__input_error {
+    border-radius: 5px;
+    border: 1px solid var(--color-red-error);
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(255, 89, 89, 0.20);
+    color: var(--color-red-error);
+}
+
+.input-with-label__input_error::placeholder {
+    color: var(--color-red-error);
+    opacity: 1;
+}
+
+.input-with-label__error {
+    color: var(--color-red-error);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    align-self: center;
+}
+
+@media (max-width:1440px) {
+    .input-with-label__error {
+        font-size: 12px;
+        letter-spacing: 0.12px;
+    }
+}
+
+.input-with-label__error_auth {
+    margin-top: -10px;
+}
+
+.input-with-label__error_search {
+    margin-top: -13px;
+}
+
+.input-with-label__input_search {
+    width: 242px;
+}
+
+@media (max-width:1440px) {
+    .input-with-label__input_search {
+        width: 335px;
+    }
+}

@@ -1,0 +1,10 @@
+.unauthorized-page {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding-top: 30px;
+    padding-left: 60px;
+    box-sizing: border-box;
+}

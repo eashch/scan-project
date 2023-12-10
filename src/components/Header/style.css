@@ -1,0 +1,231 @@
+.header {
+    height: 93px;
+    background-color: var(--color-white);
+}
+
+.header-container {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: transparent;
+    padding-left: 60px;
+    padding-right: 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.header-container__logo {
+    object-fit: cover;
+    height: 93px;
+}
+
+@media (max-width:1440px) {
+    .header-container__logo {
+        width: 111px;
+        height: 93px;
+    }
+}
+
+.header-container_in-menu {
+    background-color: var(--color-green);
+}
+
+@media (max-width:1440px) {
+    .header-container {
+        width: auto;
+        margin: 0;
+        padding-left: 14px;
+        padding-right: 26px;
+        justify-content: space-between;
+    }
+}
+
+.header-container__navigation {
+    display: flex;
+    flex-direction: row;
+    width: 236px;
+    justify-content: space-between;
+    margin-left: 401px;
+    align-items: flex-start;
+    gap: 0px;
+    margin-top: auto;
+}
+
+@media (max-width:1440px) {
+    .header-container__navigation {
+        flex-direction: column;
+        align-self: center;
+        gap: 26px;
+        margin-left: 0px;
+        align-items: center;
+        margin-top: 36px;
+    }
+}
+
+.header-container__link {
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.14px; 
+}
+
+.header-container__link:hover {
+    opacity: 0.7;
+}
+
+@media (max-width:1440px) {
+    .header-container__link {
+        text-decoration: none;
+        color: var(--color-white);
+        font-size: 16px;
+        letter-spacing: 0.16px;
+    }
+}
+
+.header-container__link_dim {
+    opacity: 0.4;
+}
+
+.header-container__link_dim:hover {
+    opacity: 0.2;
+}
+
+.header-authorization {
+    margin-top: 0px;
+    margin-left: 291px;
+    width: 251px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+}
+
+@media (max-width:1440px) {
+    .header-authorization {
+        margin-top: 75px;
+        margin-left: 0;
+        align-self: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20.52px;
+    }
+}
+
+.header-authorization__divider {
+    display: block;
+    width: 2px;
+    height: 26px; 
+    opacity: 0.6;
+    background: var(--color-green); 
+}
+
+@media (max-width:1440px) {
+    .header-authorization__divider {
+        display: none;
+    }
+}
+
+.header-authorization__button-log-in {
+    border-radius: 5px;
+    background: var(--color-light-blue);
+    width: 65px;
+    height: 26px; 
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.14px; 
+}
+
+.header-authorization__button-log-in:hover {
+    opacity: 0.7;
+}
+
+@media (max-width:1440px) {
+    .header-authorization__button-log-in {
+        border-radius: 5px;
+        background: var(--color-light-blue);
+        width: 295px;
+        height: 51.955px;
+        font-size: 20px;
+        letter-spacing: 0.2px;
+    }
+}
+
+
+.header-authorized {
+    margin-left: 128px;
+    gap: 128px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width:1440px) {
+    .header-authorized {
+        margin-left: 0px;
+        gap: 0px;
+    }
+}
+
+.header-container__mobile-menu {
+    display: none;
+}
+
+@media (max-width:1440px) {
+    .header-container__mobile-menu {
+        display: initial;
+        background: transparent;
+    }
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width:1440px) {
+    .header-content {
+        flex-direction: column;
+        position: fixed; 
+        display: flex; 
+        width: 100%; 
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--color-green); 
+        z-index: 2;
+    }
+}
+
+.header-content-mobile {
+    display: none;
+}
+
+.header-content-mobile__icon {
+    width: 111px;
+    height: 111px;
+    margin-top: -6px;
+}
+
+.header-content-mobile__exit-menu {
+    width: 24.749px;
+    height: 24.749px;
+    margin-top: 37px;
+    background-color: transparent;
+}
+
+@media (max-width:1440px) {
+    .header-content-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 93px;
+        margin-left: 14px;
+        margin-right: 28.25px;
+    }
+}

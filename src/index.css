@@ -1,0 +1,131 @@
+:root {
+    --color-green: #029491;
+    --color-black: #000;
+    --color-white: #FFF;
+    --color-orange: #FFB64F;
+    --color-light-blue: #7CE3E1;
+    --color-blue: #5970FF;
+
+    --color-light-green: #8AC540;
+    --color-blue-current-rate: #3BA5E0;
+    --color-gray: #C7C7C7;
+    --color-dark-gray: #949494;
+    --color-red-error: #FF5959;
+}
+
+@font-face {
+    font-family: 'Ferry';
+    src: local('Ferry'), url(./fonts/Ferry.otf) format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.text {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-black);
+    font-weight: 400;
+    line-height: normal; 
+}
+
+.text_title {
+    font-family: "Ferry", sans-serif;
+    color: var(--color-black);
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.button {
+    border-radius: 5px;
+    cursor: pointer;
+    appearance: none;
+    border: none;
+    opacity: 1;
+}
+
+.button-light {
+    background: var(--color-light-blue); 
+}
+
+.button-dark {
+    background: var(--color-blue); 
+    width: 335px;
+    height: 59px;
+    color: var(--color-white);
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.22px;
+}
+
+.button-dark:hover {
+    opacity: 0.7;
+}
+
+@media (max-width:1440px) {
+    .button-dark {
+        font-size: 20px;
+        letter-spacing: 0.2px;
+    }
+}
+
+.button-dark__disabled {
+    opacity: 0.5;
+    cursor: auto;
+}
+
+.button-dark__disabled:hover {
+    opacity: 0.5;
+}
+
+
+.input {
+    width: 379px;
+    height: 43px;
+    border-radius: 5px;
+    border: 1px solid var(--color-gray);
+    background: var(--color-white);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 0.16px;
+    text-indent: 19px;
+    box-sizing: border-box;
+}
+
+input[type="date"]::after {
+    -webkit-appearance: none;
+    opacity: 0;
+    background-image: url('');
+}
+
+.input::placeholder {
+    color: var(--color-dark-gray);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-align: center;
+    opacity: 0.4;
+}
+
+@media (max-width:1440px) {
+    .input {
+        width: 305px;
+        height: 43px;
+        font-size: 16px;
+        letter-spacing: 0.16px;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+}

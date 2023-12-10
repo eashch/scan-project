@@ -1,0 +1,273 @@
+.rate {
+    width: 415px;
+    height: 540px;
+    border-radius: 10px;
+    background: var(--color-white);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+}
+
+@media (max-width:1440px) {
+    .rate {
+        width: 335px;
+        height: 512px;
+    }
+}
+
+.rate_business {
+    height: 540px;
+}
+
+@media (max-width:1440px) {
+    .rate_business {
+        height: 472px;
+    }
+}
+
+.rate_orange-border {
+    border: 2px solid #FFB64F;
+}
+
+.rate-header {
+    width: 415px;
+    height: 132px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 15.76px;
+    box-sizing: border-box;
+}
+
+@media (max-width:1440px) {
+    .rate-header {
+        width: 335px;
+        height: 132px;
+        padding-left: 24px;
+    }
+}
+
+.rate-header-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.rate-header-title__title {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin-bottom: 10px;
+}
+
+.rate-header-title__title_white {
+    color: var(--color-white);
+}
+
+.rate-header-title__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.18px;
+    width: 282px;
+}
+
+.rate-header-title__subtitle_white {
+    color: var(--color-white);
+}
+
+.rate-header_beginner {
+    background: var(--color-orange);
+}
+
+.rate-header-title__title_beginner {
+    font-size: 30px;
+    letter-spacing: 0.3px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:1440px) {
+    .rate-header-title__title_beginner {
+        font-size: 20px;
+        letter-spacing: 0.2px;
+        margin-bottom: 22px;
+    }
+}
+
+.rate-header__image_beginner {
+    width: 92.244px;
+    height: 83.145px;
+    margin-top: -19px;
+    margin-left: 0px;
+}
+
+@media (max-width:1440px) {
+    .rate-header__image_beginner {
+        width: 59px;
+        height: 53.181px;
+        margin-top: -17px;
+        margin-left: -34px;
+    }
+}
+
+.rate-header_pro {
+    background: var(--color-light-blue);
+}
+
+.rate-header__image_pro {
+    width: 93.763px;
+    height: 103.97px;
+    margin-top: -25px;
+    margin-left: 0px;
+}
+
+@media (max-width:1440px) {
+    .rate-header__image_pro {
+        width: 68.299px;
+        height: 75.734px;
+        margin-top: -28px;
+        margin-left: -40px;
+    }
+}
+
+.rate-header_business {
+    background: var(--color-black);
+}
+
+.rate-header__image_business {
+    width: 93.763px;
+    height: 103.97px;
+    margin-top: -18px;
+}
+
+@media (max-width:1440px) {
+    .rate-header__image_business {
+        width: 73px;
+        height: 60.902px;
+        margin-top: -15px;
+        margin-left: -55px;
+    }
+}
+
+.rate-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 30px;
+    padding-top: 33px;
+    box-sizing: border-box;
+}
+
+@media (max-width:1440px) {
+    .rate-content {
+        padding-left: 24px;
+        padding-top: 20px;
+    }
+}
+
+.rate-current {
+    position: absolute;
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.14px;
+    border-radius: 10px;
+    width: 134px;
+    height: 24px;
+    background: var(--color-blue-current-rate);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    top: 12px;
+}
+
+.rate-price {
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+    align-items: center;
+}
+
+.rate-price__price-now {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.rate-price__price-full {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.rate-content__price-option {
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    margin-top: 10px;
+}
+
+.rate-content__price-option_business {
+    display: initial;
+}
+
+@media (max-width:1440px) {
+    .rate-content__price-option_business {
+        display: none;
+    }
+}
+
+.rate-content__rate-has {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    margin-top: 59px;
+    margin-bottom: 5px;
+}
+
+@media (max-width:1440px) {
+    .rate-content__rate-has {
+        font-size: 18px;
+        letter-spacing: 0.18px;
+        margin-top: 36px;
+    }
+}
+
+.rate-advantage {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.rate-content__button {
+    margin-top: 55px;
+    width: 355px;
+    font-size: 20px;    
+}
+
+@media (max-width:1440px) {
+    .rate-content__button {
+        width: 286.566px;
+        height: 59px;
+        font-size: 18px;    
+    }   
+}
+
+.rate-content__button_current-rate {
+    background: #D2D2D2;
+    color: var(--color-black);
+}
+
+.rate-advantage__option {
+    font-size: 18px;
+    letter-spacing: 0.18px;
+}
+
+@media (max-width:1440px) {
+    .rate-advantage__option {
+        font-size: 16px;
+        letter-spacing: 0.16px;
+    }    
+}

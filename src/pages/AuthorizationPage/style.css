@@ -1,0 +1,217 @@
+.auth-page {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 69px;
+    margin-bottom: 80px;
+}
+
+@media (max-width:1440px) {
+    .auth-page {
+        width: auto;
+        margin: 0;
+        margin-top: 31px;
+        margin-bottom: 80px;
+    }
+}
+
+.auth-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+
+@media (max-width:1440px) {
+    .auth-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 14px;
+    }
+}
+
+
+.auth-content__title {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+}
+
+@media (max-width:1440px) {
+    .auth-content__title {
+        font-size: 22px;
+        letter-spacing: 0.44px;
+    }
+}
+
+.auth-page__image {
+    margin-left: 112px;
+    margin-top: -365.105px;
+    width: 321.764px;
+    height: 342.035px;
+}
+
+@media (max-width:1440px) {
+    .auth-page__image {
+        margin-left: 14px;
+        margin-top: 49px;
+        width: 335px;
+        height: 356.105px;
+    }
+}
+
+
+.auth-form {
+    width: 429px;
+    height: 523px;
+    border-radius: 10px;
+    background: var(--color-white);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 25px 39px 25px;
+    box-sizing: border-box;
+    margin-right: 141px;
+    position: relative;
+    margin-top: 0px;
+}
+
+@media (max-width:1440px) {
+    .auth-form {
+        width: 335px;
+        height: 504px;
+        padding: 25px 15px 20px 15px;
+        margin-right: 0px;
+        margin-top: 126px;
+    }
+}
+
+.auth-form__image-lock {
+    width: 75.219px;
+    height: 92.065px;
+    position: absolute;
+    top: -55px;
+    left: -51px;
+}
+
+@media (max-width:1440px) {
+    .auth-form__image-lock {
+        width: 75.219px;
+        height: 92.065px;
+        top: -81px;
+        left: 81px;
+    }
+}
+
+.auth-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    width: 379px;
+}
+
+@media (max-width:1440px) {
+    .auth-options {
+        width: 305px;
+    }
+}
+
+.auth-options__button {
+    border: none;
+    appearance: none;
+    background-color: transparent;
+    color: var(--color-gray);
+    width: 151px;
+    height: 29px;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    border-bottom: 2px solid var(--color-gray);
+    cursor: pointer;
+}
+
+.auth-options__button:hover {
+    opacity: 0.7;
+}
+
+@media (max-width:1440px) {
+    .auth-options__button {
+        width: 103px;
+        height: 29px;
+        font-size: 14px;
+        letter-spacing: 0.28px;
+    }
+}
+
+.auth-options__button_active {
+    border-color: var(--color-green);
+    color: var(--color-green);
+}
+
+.auth-options__button_register {
+    width: 213px;
+}
+
+@media (max-width:1440px) {
+    .auth-options__button_register {
+        width: 182px;
+    }
+}
+
+.auth-form__button {
+    width: 379px;
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+
+@media (max-width:1440px) {
+    .auth-form__button {
+        width: 305px;
+        margin-top: 7px;
+        margin-bottom: 15px;
+    }
+}
+
+.auth-form__reset-password {
+    color: var(--color-blue);
+    appearance: none;
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    text-decoration-line: underline;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.auth-form__reset-password:hover {
+    opacity: 0.7;
+}
+
+.auth-form__log-in-via {
+    color: var(--color-dark-gray);
+    font-size: 16px;
+    letter-spacing: 0.16px;
+    align-self: flex-start;
+    margin-bottom: 15px;
+}
+
+.auth-via-social-networks {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-self: flex-start;
+}
+
+.auth-via-social-networks__button {
+    width: 96px;
+    height: 31px;
+    border: none;
+    appearance: none;
+    background-color: transparent;
+}
+
+.auth-via-social-networks__button:hover {
+    opacity: 0.7;
+}
